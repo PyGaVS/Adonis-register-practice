@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AdonisJS - A fully featured web framework for Node.js</title>
+  @entryPointStyles('app')
+  @entryPointScripts('app')
+</head>
+<body>
+  <div class="connexion">
+  <form method="POST" action="{{route("login")}}">
+        <br>
+        <h1 class="leadcode">Leadcode</h1>
+        <br>
+        <small class="label">Nom d'utilisateur</small>
+        <br>
+        <input name='email' class="login" type="string">
+        <br>
+        <br>
+        <br>
+        <small class="label">Mot de passe</small>
+        <br>
+        <input name='password' class="login" type="password">
+        <br>
+        <button class="connexion-button" type="submit">Connexion</button>
+    </form>
+        <p class="register"><a class="register" href="{{route(`register`)}}">S'inscrire</a></p>
+    </div>
+</body>
+</html>

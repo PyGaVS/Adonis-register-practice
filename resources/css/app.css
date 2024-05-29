@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+html, body {
+  background-image: url('./img/wallpaper.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  color: #46444c;
+  position: relative;
+}
+
+body:before {
+  content: '';
+  background: rgb(0, 162, 255, .45);
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  position: absolute;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: rgb(0, 162, 255);
+  text-decoration: none;
+}
+
+p.register {
+  margin-top: 10px;
+}
+
+main {
+  max-width: 620px;
+  margin: auto;
+  height: 100vh;
+  padding: 0 30px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  font-size: 50px;
+  line-height: 50px;
+  margin-bottom: 10px;
+  color: #17161A;
+}
+
+.subtitle {
+  font-size: 26px;
+  margin-bottom: 40px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+main ul {
+  list-style: none;
+}
+
+main li {
+  margin-bottom: 5px;
+  position: relative;
+  padding-left: 25px;
+}
+
+main li:before {
+  content: '—';
+  position: absolute;
+  left: 0;
+}
+
+main code {
+  font-size: 16px;
+  background: #e6e2ff;
+}
+/*
+.connexion
+{
+    text-align:center;
+    border: solid 4px rgb(0, 162, 255);
+    border-radius: 70px;
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}*/
+@keyframes bg {
+  from, to { background-color: rgb(0, 0, 0, .80); }
+  50%      { background-color: rgba(0, 0, 0, .60); }
+}
+
+.inscription,.connexion
+{
+    margin-top: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    /*border: solid 4px rgb(0, 162, 255);*/
+    border-radius: 70px;
+    width: 500px;
+    transform: translate(-50%, -50%);
+    /*background-color: rgb(0, 0, 0, .40)*/
+    animation: bg 5s infinite;
+}
+
+label
+{
+    color: rgb(0, 162, 255);
+}
+
+input
+{
+    color: rgb(0, 162, 255);
+    border: 0px;
+    border-bottom: solid 2px rgb(0, 162, 255);
+    width: 250px;
+    background-color: transparent;
+}
+
+input:focus{
+  color: rgb(0, 162, 255);
+  outline: none;
+}
+
+
+.connexion-button
+{
+    margin-top: 60px;
+    height: 30px;
+    width: 180px;
+    border: none;
+    background: linear-gradient(45deg, rgb(0, 68, 255), rgb(0, 209, 157));
+    color: white;
+    border-radius: 5px;
+}
+
+.leadcode
+{
+    color: rgb(0, 162, 255);
+}
+
+.form-control {
+  padding-top: 2rem;
+}
+
+.form-control .error {
+    color: rgb(255, 56, 56);
+}
+
+.white {
+  color: white;
+}
